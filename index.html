@@ -29,7 +29,7 @@
 <body>
 <main>
   <!-- Remove this draft notice only after completing the placeholders and the release checks in README.md. -->
-  <p class="notice"><strong>Bản nháp — chưa dùng để nộp Google Play.</strong> Cần hoàn thiện thông tin nhà phát triển, email liên hệ, thời hạn lưu trữ và quy trình xử lý yêu cầu trước khi công bố.</p>
+  <p class="notice"><strong>Bản nháp — cần xác nhận trước khi công bố.</strong> Còn thiếu tên nhà phát triển, mốc bắt đầu thời hạn 7 ngày và xác nhận quy trình xử lý yêu cầu xóa.</p>
   <h1>Chính sách quyền riêng tư</h1>
   <p class="meta"><strong>Ứng dụng:</strong> Ngày xưa ơi - EDO Time<br>
     <strong>Mã ứng dụng Android:</strong> com.eduino.timevn<br>
@@ -37,7 +37,7 @@
 
   <h2>1. Phạm vi và đơn vị chịu trách nhiệm</h2>
   <p>Chính sách này áp dụng riêng cho ứng dụng <strong>Ngày xưa ơi - EDO Time</strong> (tên dự án: TimeTravel), do <strong>[TEN_NHA_PHAT_TRIEN]</strong> cung cấp. Ứng dụng cho phép xem tư liệu ảnh, tìm hiểu lịch sử, đóng góp ảnh và lưu ảnh để xem sau.</p>
-  <p>Đầu mối tiếp nhận câu hỏi về quyền riêng tư và yêu cầu xóa dữ liệu: <a href="mailto:[EMAIL_HO_TRO]">[EMAIL_HO_TRO]</a>.</p>
+  <p>Đầu mối tiếp nhận câu hỏi về quyền riêng tư và yêu cầu xóa dữ liệu: <a href="mailto:eduino.info@gmail.com">eduino.info@gmail.com</a>.</p>
 
   <h2>2. Dữ liệu được truy cập và thu thập</h2>
   <p>Bạn có thể xem thư viện ảnh và nội dung lịch sử mà không đăng nhập. Đăng nhập Google được sử dụng cho các chức năng gắn với tài khoản, như đóng góp ảnh và lưu ảnh.</p>
@@ -85,7 +85,8 @@
   <ul>
     <li><strong>Google Sign-In và Firebase Authentication:</strong> xử lý đăng nhập Google, thông tin hồ sơ, mã xác thực và dữ liệu kỹ thuật phục vụ xác thực, bảo mật và vận hành. Xem <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư Google</a> và <a href="https://firebase.google.com/support/privacy">thông tin quyền riêng tư Firebase</a>.</li>
     <li><strong>Cloudinary:</strong> nhận tệp ảnh đóng góp và thông tin tệp để lưu trữ, xử lý và phân phối ảnh. Khi tải ảnh qua mạng phân phối nội dung, Cloudinary nhận thông tin yêu cầu như địa chỉ IP. Xem <a href="https://cloudinary.com/privacy">Chính sách quyền riêng tư Cloudinary</a>.</li>
-    <li><strong>Nhà cung cấp hạ tầng máy chủ và cơ sở dữ liệu:</strong> vận hành máy chủ xử lý tài khoản, nội dung, phiên đăng nhập và ảnh lưu. Các nhà cung cấp được sử dụng: <strong>[NHA_CUNG_CAP_HA_TANG_THUC_TE]</strong>.</li>
+    <li><strong>Dịch vụ hạ tầng máy chủ và cơ sở dữ liệu:</strong> xử lý và lưu trữ thông tin tài khoản, phiên đăng nhập, nội dung đóng góp và danh sách ảnh lưu để vận hành ứng dụng.</li>
+    <li><strong>Gmail:</strong> tiếp nhận và lưu email bạn gửi tới địa chỉ hỗ trợ để chúng tôi trả lời và xử lý yêu cầu. Dịch vụ này do Google cung cấp theo <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư Google</a>.</li>
     <li><strong>Google Fonts:</strong> ứng dụng có thể tải phông chữ từ máy chủ Google; yêu cầu tải truyền địa chỉ IP và thông tin kết nối cần thiết để nhận phông chữ.</li>
     <li><strong>Người dùng khác và người duyệt:</strong> nhận hoặc xem dữ liệu theo phạm vi đã mô tả tại mục 5.</li>
   </ul>
@@ -95,25 +96,26 @@
   <p>Ứng dụng sử dụng bộ nhớ bảo mật của thiết bị để lưu phiên đăng nhập. Máy chủ kiểm tra phiên trước khi cho phép truy cập dữ liệu cá nhân và giới hạn quyền duyệt ảnh. Mã phiên ứng dụng được lưu dưới dạng giá trị băm trên cơ sở dữ liệu; thông tin bí mật để quản lý ảnh được giữ trên máy chủ.</p>
   <p>Các kết nối tới Google/Firebase và Cloudinary sử dụng HTTPS. Máy chủ ứng dụng được cấu hình sử dụng HTTPS để bảo vệ dữ liệu trong quá trình truyền. Không có phương thức truyền hoặc lưu trữ nào bảo đảm an toàn tuyệt đối.</p>
 
-  <h2>8. Thời gian lưu trữ</h2>
+  <h2 id="luu-tru">8. Thời gian lưu trữ</h2>
   <ul>
     <li><strong>Hồ sơ, dữ liệu phiên, ảnh đóng góp và danh sách ảnh lưu:</strong> được giữ để vận hành tài khoản và nội dung cho đến khi tài khoản hoặc dữ liệu tương ứng bị xóa. Phiên ứng dụng có thời hạn sử dụng 30 ngày; hết hạn phiên không đồng nghĩa các bản ghi trên máy chủ đã bị xóa.</li>
-    <li><strong>Ảnh cần xóa trên Cloudinary:</strong> sau khi tài khoản bị xóa khỏi cơ sở dữ liệu ứng dụng, hệ thống gửi yêu cầu xóa ảnh và thử lại khi thất bại. Thời hạn hoàn tất, xử lý lỗi và bộ nhớ đệm phân phối ảnh: <strong>[THOI_HAN_VA_QUY_TRINH_XOA_ANH]</strong>.</li>
-    <li><strong>Hồ sơ Firebase Authentication:</strong> ứng dụng yêu cầu xóa hồ sơ Firebase sau khi xóa thành công tài khoản trên máy chủ ứng dụng. Nếu thao tác này không thành công, ứng dụng thông báo cho bạn; hãy liên hệ email hỗ trợ để được xử lý. Quy trình và thời hạn hoàn tất trường hợp này: <strong>[QUY_TRINH_VA_THOI_HAN_XOA_FIREBASE]</strong>.</li>
+    <li><strong>Ảnh cần xóa trên Cloudinary:</strong> sau khi tài khoản bị xóa khỏi cơ sở dữ liệu ứng dụng, hệ thống gửi yêu cầu xóa ảnh và thử lại khi thất bại. Bản sao đã phân phối có thể còn trong bộ nhớ đệm sau khi ảnh gốc bị xóa; theo <a href="https://cloudinary.com/documentation/invalidate_cached_media_assets_on_the_cdn">tài liệu Cloudinary</a>, bộ nhớ đệm CDN tiêu chuẩn có thể giữ ảnh tối đa 30 ngày nếu chưa được làm mất hiệu lực.</li>
+    <li><strong>Hồ sơ Firebase Authentication:</strong> ứng dụng yêu cầu xóa hồ sơ Firebase sau khi xóa thành công tài khoản trên máy chủ ứng dụng. Nếu thao tác này không thành công, ứng dụng thông báo cho bạn; hãy gửi email tới <a href="mailto:eduino.info@gmail.com">eduino.info@gmail.com</a> để yêu cầu hỗ trợ hoàn tất.</li>
     <li><strong>Dữ liệu Firebase sau khi Google nhận yêu cầu xóa:</strong> theo tài liệu Firebase, nhật ký IP được giữ trong vài tuần; thông tin xác thực khác được loại bỏ khỏi hệ thống hoạt động và sao lưu trong vòng 180 ngày sau khi khách hàng Firebase bắt đầu xóa người dùng. Thời gian này áp dụng cho Firebase, không phải cam kết thời hạn lưu trữ của máy chủ ứng dụng. Xem <a href="https://firebase.google.com/support/privacy">chính sách lưu trữ Firebase</a>.</li>
-    <li><strong>Nhật ký máy chủ và hỗ trợ:</strong> loại thông tin được giữ, mục đích và thời hạn: <strong>[DU_LIEU_MUC_DICH_VA_THOI_HAN_LOG_HO_TRO]</strong>.</li>
-    <li><strong>Bản sao lưu máy chủ/cơ sở dữ liệu:</strong> phạm vi dữ liệu, thời hạn lưu và cách loại bỏ dữ liệu đã yêu cầu xóa khi khôi phục: <strong>[CHINH_SACH_SAO_LUU_VA_XOA]</strong>.</li>
+    <li><strong>Thông tin hỗ trợ:</strong> email và nội dung yêu cầu được sử dụng trong thời gian cần thiết để trả lời, xác minh và giải quyết yêu cầu. Nếu cần giữ thêm để giải quyết tranh chấp hoặc đáp ứng nghĩa vụ pháp lý, chúng tôi giới hạn dữ liệu theo mục đích đó.</li>
+    <li><strong>Nhật ký kỹ thuật:</strong> dịch vụ máy chủ và các nhà cung cấp có thể lưu thông tin yêu cầu mạng, lỗi hoặc hoạt động bảo mật để vận hành và bảo vệ dịch vụ. Thời gian lưu phụ thuộc vào cấu hình và chính sách của dịch vụ tương ứng.</li>
+    <li><strong>Bản sao lưu, nếu có:</strong> dữ liệu đã xóa khỏi hệ thống đang hoạt động có thể còn trong bản sao lưu cho đến khi bản sao đó hết thời hạn hoặc được thay thế theo chu kỳ của nhà cung cấp. Bạn có thể liên hệ email hỗ trợ để hỏi về phạm vi lưu trữ liên quan đến yêu cầu của mình.</li>
   </ul>
 
   <h2 id="xoa-tai-khoan">9. Lựa chọn của bạn và yêu cầu xóa dữ liệu</h2>
   <p>Bạn có thể xem nội dung công khai mà không đăng nhập, không gửi ảnh, bỏ lưu từng ảnh hoặc đăng xuất khỏi ứng dụng. Đăng xuất không xóa tài khoản hoặc các ảnh đã gửi.</p>
   <p>Để xóa tài khoản trong ứng dụng: mở <strong>Cá nhân → chạm ảnh đại diện → Xóa tài khoản → xác nhận</strong>. Khi máy chủ xử lý thành công, hồ sơ ứng dụng, phiên đăng nhập, ảnh đóng góp và các liên kết ảnh lưu của tài khoản bị xóa khỏi cơ sở dữ liệu ứng dụng. Ảnh trên Cloudinary và hồ sơ Firebase được xử lý theo mục 8. Ảnh gốc trong thư viện thiết bị và tài khoản Google của bạn không bị xóa.</p>
-  <p>Bạn cũng có thể gửi yêu cầu mà không cần cài lại ứng dụng tại <a href="delete-account.html">trang yêu cầu xóa tài khoản</a> hoặc qua email <a href="mailto:[EMAIL_HO_TRO]">[EMAIL_HO_TRO]</a>. Chúng tôi cần xác minh bạn sở hữu tài khoản; không gửi mật khẩu, mã OTP hoặc mã phiên đăng nhập. Thời gian tiếp nhận, xác minh và hoàn tất yêu cầu qua email: <strong>[THOI_HAN_XU_LY_YEU_CAU_EMAIL]</strong>.</p>
+  <p>Bạn cũng có thể gửi yêu cầu mà không cần cài lại ứng dụng tại <a href="delete-account.html">trang yêu cầu xóa tài khoản</a> hoặc qua email <a href="mailto:eduino.info@gmail.com">eduino.info@gmail.com</a>. Chúng tôi cần xác minh bạn sở hữu tài khoản; không gửi mật khẩu, mã OTP hoặc mã phiên đăng nhập. Thời hạn xử lý yêu cầu xóa tài khoản và dữ liệu ứng dụng: <strong>tối đa 7 ngày</strong>. Mốc bắt đầu tính thời hạn: <strong>[MOC_BAT_DAU_THOI_HAN_XOA]</strong>. Thời gian lưu trữ riêng của nhà cung cấp được trình bày tại mục 8.</p>
   <p>Nếu bạn là cha mẹ hoặc người giám hộ và cần yêu cầu xử lý dữ liệu liên quan đến trẻ em, vui lòng liên hệ cùng đầu mối hỗ trợ.</p>
 
   <h2>10. Thay đổi chính sách và liên hệ</h2>
   <p>Chúng tôi cập nhật chính sách khi cách xử lý dữ liệu thay đổi và công bố ngày cập nhật tại trang này. Những thay đổi cần thông báo hoặc sự đồng ý bổ sung sẽ được xử lý theo yêu cầu áp dụng.</p>
-  <p>Nhà phát triển: <strong>[TEN_NHA_PHAT_TRIEN]</strong><br>Email quyền riêng tư và hỗ trợ: <a href="mailto:[EMAIL_HO_TRO]">[EMAIL_HO_TRO]</a>.</p>
+  <p>Nhà phát triển: <strong>[TEN_NHA_PHAT_TRIEN]</strong><br>Email quyền riêng tư và hỗ trợ: <a href="mailto:eduino.info@gmail.com">eduino.info@gmail.com</a>.</p>
   <footer><a href="delete-account.html">Yêu cầu xóa tài khoản và dữ liệu</a></footer>
 </main>
 </body>
